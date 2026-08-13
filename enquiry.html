@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Beauty - Enquiry</title>
+</head>
+<body>
+
+    <!-- Header section with logo and navigation menu -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Luxe Beauty Logo" width="60">
+            <h1>Luxe Beauty</h1>
+        </div>
+        <!-- Navigation links to all five pages with target="_blank" -->
+        <nav>
+            <a href="index.html" target="_blank">Home</a> &nbsp;|&nbsp;
+            <a href="about.html" target="_blank">About</a> &nbsp;|&nbsp;
+            <a href="products.html" target="_blank">Products</a> &nbsp;|&nbsp;
+            <a href="enquiry.html" target="_blank">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html" target="_blank">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Need Beauty Advice?</h1>
+        <p>Complete the enquiry form and one of our beauty consultants will contact you.</p>
+
+        <!-- Enquiry form with different input types -->
+        <form action="#" method="post">
+
+            <!-- Dropdown for product category -->
+            <label for="interest">What are you looking for?</label>
+            <select id="interest" name="interest">
+                <option value="makeup">Makeup</option>
+                <option value="skincare">Skincare</option>
+                <option value="fragrance">Fragrance</option>
+                <option value="accessories">Beauty Accessories</option>
+            </select>
+            <br><br>
+
+            <!-- Radio buttons for shopping method preference -->
+            <fieldset>
+                <legend>Preferred Shopping Method</legend>
+                <label>
+                    <input type="radio" name="shopping_method" value="online"> Online
+                </label>
+                <label>
+                    <input type="radio" name="shopping_method" value="in-store"> In Store
+                </label>
+            </fieldset>
+            <br>
+
+            <!-- Number input for quantity with min and max limits -->
+            <label for="quantity">How many products are you interested in?</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20">
+            <br><br>
+
+            <!-- Date picker for consultation date -->
+            <label for="consultation-date">Preferred Consultation Date</label>
+            <input type="date" id="consultation-date" name="consultation-date">
+            <br><br>
+
+            <!-- Textarea for detailed message -->
+            <label for="message">Tell us how we can help you.</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="40" placeholder="Your enquiry details..."></textarea>
+            <br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Enquiry">
+
+        </form>
+
+    </main>
+
+    <!-- Footer with social media links and copyright -->
+    <footer>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank">TikTok</a></li>
+                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Luxe Beauty. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
