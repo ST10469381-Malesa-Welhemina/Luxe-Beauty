@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxe Beauty - Products</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- Header section with logo and navigation menu -->
     <header>
         <div class="logo">
+            <a href="index.html">
             <img src="images/logo.jpeg" alt="Luxe Beauty Logo" width="60">
-            <h1>Luxe Beauty</h1>
+            <h1>Luxe Beauty</h1></a>
         </div>
-        <!-- Navigation links to all five pages with target="_blank" -->
         <nav>
             <a href="index.html" target="_blank">Home</a> &nbsp;|&nbsp;
             <a href="about.html" target="_blank">About</a> &nbsp;|&nbsp;
@@ -26,37 +27,43 @@
     <main>
         <h1>Our Products</h1>
 
-        <!-- Product 1: Velvet Matte Foundation -->
-        <article class="product">
-            <img src="images/foundation.png" alt="Velvet Matte Foundation bottle" width="200">
-            <h3>Velvet Matte Foundation</h3>
-            <p><strong>Price:</strong> R249</p>
-            <p>Long lasting foundation suitable for all skin types.</p>
-        </article>
+        <!-- Product grid wrapper -->
+        <div class="products-grid">
 
-        <!-- Product 2: Radiance Glow Serum -->
-        <article class="product">
-            <img src="images/glow-serum.png" alt="Radiance Glow Serum dropper bottle" width="200">
-            <h3>Radiance Glow Serum</h3>
-            <p><strong>Price:</strong> R299</p>
-            <p>Hydrates and brightens the skin.</p>
-        </article>
+            <!-- Product 1: Velvet Matte Foundation -->
+            <article class="product">
+                <img src="images/foundation.png" alt="Velvet Matte Foundation bottle">
+                <h3>Velvet Matte Foundation</h3>
+                <p><strong>Price:</strong> R249</p>
+                <p>Long lasting foundation suitable for all skin types.</p>
+            </article>
 
-        <!-- Product 3: Luxury Lipstick Collection -->
-        <article class="product">
-            <img src="images/lipstick.png" alt="Luxury Lipstick Collection" width="200">
-            <h3>Luxury Lipstick Collection</h3>
-            <p><strong>Price:</strong> R169</p>
-            <p>Rich colours with long lasting wear.</p>
-        </article>
+            <!-- Product 2: Radiance Glow Serum -->
+            <article class="product">
+                <img src="images/glow-serum.png" alt="Radiance Glow Serum dropper bottle">
+                <h3>Radiance Glow Serum</h3>
+                <p><strong>Price:</strong> R299</p>
+                <p>Hydrates and brightens the skin.</p>
+            </article>
 
-        <!-- Product 4: Waterproof Mascara -->
-        <article class="product">
-            <img src="images/mascara.png" alt="Waterproof Mascara tube" width="200">
-            <h3>Waterproof Mascara</h3>
-            <p><strong>Price:</strong> R189</p>
-            <p>Creates fuller, longer lashes.</p>
-        </article>
+            <!-- Product 3: Luxury Lipstick Collection -->
+            <article class="product">
+                <img src="images/lipstick.png" alt="Luxury Lipstick Collection">
+                <h3>Luxury Lipstick Collection</h3>
+                <p><strong>Price:</strong> R169</p>
+                <p>Rich colours with long lasting wear.</p>
+            </article>
+
+            <!-- Product 4: Waterproof Mascara -->
+            <article class="product">
+                <img src="images/mascara.png" alt="Waterproof Mascara tube">
+                <h3>Waterproof Mascara</h3>
+                <p><strong>Price:</strong> R189</p>
+                <p>Creates fuller, longer lashes.</p>
+            </article>
+
+        </div>
+        <!-- End of products-grid -->
 
         <!-- Product comparison table -->
         <section class="comparison">
@@ -96,7 +103,7 @@
 
     </main>
 
-    <!-- Footer with social media links and copyright -->
+    <!-- Footer -->
     <footer>
         <div class="footer-social">
             <h3>Follow Us</h3>

@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+/* CSS Reset – makes browsers consistent */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #F5F5F0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: #1A1A2E;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* Links */
+a {
+    color: #C9A96E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E8C4B0;
+}
+
+a:active {
+    color: #1A1A2E;
+}
+
+/* Header */
+header {
+    background-color: #FFFFFF;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #C9A96E;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #C9A96E;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #1A1A2E;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #C9A96E;
+}
+
+nav a:active {
+    color: #1A1A2E;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Cards with box shadow */
+.welcome, .why-choose, .how-to-order, .testimonial, .branch, .opening-hours, .location-map, .comparison {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.welcome:hover, .why-choose:hover, .how-to-order:hover, .testimonial:hover, .branch:hover, .opening-hours:hover, .location-map:hover, .comparison:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Hero section */
+.hero {
+    background-color: #F9E4E0;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #1A1A2E;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #C9A96E;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #E8C4B0;
+    transform: scale(1.05);
+}
+
+.hero button:active {
+    background-color: #1A1A2E;
+    transform: scale(0.95);
+}
+
+/* Welcome section */
+.welcome {
+    text-align: center;
+}
+
+.welcome h2 {
+    margin-bottom: 10px;
+}
+
+/* Why choose section */
+.why-choose h2 {
+    margin-bottom: 15px;
+}
+
+.why-choose ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.why-choose ul li {
+    padding: 10px;
+    background-color: #F9E4E0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.why-choose ul li:hover {
+    background-color: #E8C4B0;
+    transform: scale(1.02);
+}
+
+/* How to order */
+.how-to-order h2 {
+    margin-bottom: 15px;
+}
+
+.how-to-order ol {
+    padding-left: 20px;
+}
+
+.how-to-order ol li {
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.how-to-order ol li:hover {
+    color: #C9A96E;
+}
+
+/* Testimonial */
+.testimonial {
+    text-align: center;
+}
+
+.testimonial blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #1A1A2E;
+    transition: color 0.3s ease;
+}
+
+.testimonial blockquote:hover {
+    color: #C9A96E;
+}
+
+.testimonial footer {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Product grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Product hover effects */
+.product {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #F0EDE8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.product:hover h3 {
+    color: #C9A96E;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+/* Page heading */
+main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Comparison table */
+.comparison h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #1A1A2E;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #F0EDE8;
+}
+
+table tr:nth-child(even) {
+    background-color: #F9E4E0;
+}
+
+table tr {
+    transition: background-color 0.3s ease;
+}
+
+table tr:hover {
+    background-color: #E8C4B0;
+}
+
+/* Enquiry form */
+form {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F0EDE8;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #C9A96E;
+    box-shadow: 0 0 8px rgba(201, 169, 110, 0.3);
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #C9A96E;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #E8C4B0;
+    transform: scale(1.05);
+}
+
+form input[type="submit"]:active {
+    background-color: #1A1A2E;
+    transform: scale(0.95);
+}
+
+fieldset {
+    border: 1px solid #F0EDE8;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+/* Contact page */
+.branch {
+    margin-bottom: 20px;
+}
+
+.branch h2 {
+    margin-bottom: 10px;
+}
+
+.branch address {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.opening-hours h2 {
+    margin-bottom: 15px;
+}
+
+.location-map iframe {
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+.location-map iframe:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #1A1A2E;
+    color: #FFFFFF;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    color: #C9A96E;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #C9A96E;
+}
+
+footer .footer-copy {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .why-choose ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .why-choose ul {
+        grid-template-columns: 1fr;
+    }
+
+    .why-choose ul li {
+        padding: 8px;
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .branch {
+        padding: 15px;
+    }
+
+    .opening-hours {
+        padding: 15px;
+    }
+
+    .location-map {
+        padding: 15px;
+    }
+
+    .location-map iframe {
+        height: 200px;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
