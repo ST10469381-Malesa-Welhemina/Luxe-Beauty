@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Beauty - Enquiry</title>
+    <title>Beauty Advice Enquiry | Luxe Beauty Consultation</title>
+
+    <meta name="description" content="Get personalised beauty advice from Luxe Beauty consultants. Fill in the enquiry form with your product interest, quantity, and preferred date. Free consultation.">
+    <meta name="keywords" content="beauty advice, skincare consultation, makeup enquiry, beauty consultant South Africa, Luxe Beauty enquiry">
+    <meta name="author" content="Luxe Beauty">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header section with logo and navigation menu -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <div class="logo">
             <a href="index.html">
-            <img src="images/logo.jpeg" alt="Luxe Beauty Logo" width="60">
-            <h1>Luxe Beauty</h1></a>
+                <img src="images/logo.jpeg" alt="Luxe Beauty logo">
+                <h1>Luxe Beauty</h1>
+            </a>
         </div>
         <nav>
-            <a href="index.html" target="_blank">Home</a> &nbsp;|&nbsp;
-            <a href="about.html" target="_blank">About</a> &nbsp;|&nbsp;
-            <a href="products.html" target="_blank">Products</a> &nbsp;|&nbsp;
-            <a href="enquiry.html" target="_blank">Enquiry</a> &nbsp;|&nbsp;
-            <a href="contact.html" target="_blank">Contact</a>
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About</a> &nbsp;|&nbsp;
+            <a href="products.html">Products</a> &nbsp;|&nbsp;
+            <a href="enquiry.html" class="active">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+
         <h1>Need Beauty Advice?</h1>
-        <p>Complete the enquiry form and one of our beauty consultants will contact you.</p>
+        <p style="text-align: center; margin-bottom: 25px;">Complete the enquiry form and one of our beauty consultants will contact you.</p>
 
-        <!-- Enquiry form -->
-        <form action="#" method="post">
+        <!-- success message - shows after valid submit -->
+        <div class="success-message" id="enquiry-success"></div>
 
-            <!-- Dropdown -->
-            <label for="interest">What are you looking for?</label>
-            <select id="interest" name="interest">
-                <option value="makeup">Makeup</option>
-                <option value="skincare">Skincare</option>
-                <option value="fragrance">Fragrance</option>
-                <option value="accessories">Beauty Accessories</option>
-            </select>
+        <!-- enquiry form -->
+        <form id="enquiry-form" novalidate>
 
-            <!-- Radio buttons -->
+            <div class="form-group">
+                <label for="interest">What are you looking for?</label>
+                <select id="interest" name="interest" required>
+                    <option value="">-- Please choose --</option>
+                    <option value="makeup">Makeup</option>
+                    <option value="skincare">Skincare</option>
+                    <option value="fragrance">Fragrance</option>
+                    <option value="accessories">Beauty Accessories</option>
+                </select>
+                <span class="error" id="interest-error"></span>
+            </div>
+
             <fieldset>
                 <legend>Preferred Shopping Method</legend>
                 <label>
@@ -49,35 +62,40 @@
                 <label>
                     <input type="radio" name="shopping_method" value="in-store"> In Store
                 </label>
+                <span class="error" id="shopping_method-error"></span>
             </fieldset>
 
-            <!-- Number input -->
-            <label for="quantity">How many products are you interested in?</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="20">
+            <div class="form-group">
+                <label for="quantity">How many products are you interested in?</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                <span class="error" id="quantity-error"></span>
+            </div>
 
-            <!-- Date picker -->
-            <label for="consultation-date">Preferred Consultation Date</label>
-            <input type="date" id="consultation-date" name="consultation-date">
+            <div class="form-group">
+                <label for="consultation-date">Preferred Consultation Date</label>
+                <input type="date" id="consultation-date" name="consultation-date" required>
+                <span class="error" id="consultation-date-error"></span>
+            </div>
 
-            <!-- Textarea -->
-            <label for="message">Tell us how we can help you.</label>
-            <textarea id="message" name="message" rows="5" cols="40" placeholder="Your enquiry details..."></textarea>
+            <div class="form-group">
+                <label for="message">Tell us how we can help you.</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your enquiry details..." required></textarea>
+                <span class="error" id="message-error"></span>
+            </div>
 
-            <!-- Submit button -->
             <input type="submit" value="Submit Enquiry">
-
         </form>
+
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-social">
             <h3>Follow Us</h3>
             <ul>
-                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank">TikTok</a></li>
-                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank">YouTube</a></li>
+                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank" rel="noopener">TikTok</a></li>
+                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank" rel="noopener">YouTube</a></li>
             </ul>
         </div>
         <div class="footer-copy">
@@ -85,5 +103,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

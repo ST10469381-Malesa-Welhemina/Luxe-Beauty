@@ -3,50 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Beauty - About Us</title>
+    <title>About Us | Luxe Beauty - Our Story & Mission</title>
+
+    <meta name="description" content="Learn about Luxe Beauty's story, mission, and values. Founded in 2024 by Malesa Walmena, we make affordable luxury beauty accessible to everyone in South Africa.">
+    <meta name="keywords" content="luxe beauty about, beauty brand story, Malesa Walmena, South African cosmetics, cruelty-free beauty, beauty mission">
+    <meta name="author" content="Luxe Beauty">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header section with logo and navigation menu -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <div class="logo">
             <a href="index.html">
-            <img src="images/logo.jpeg" alt="Luxe Beauty Logo" width="60">
-            <h1>Luxe Beauty</h1></a>
+                <img src="images/logo.jpeg" alt="Luxe Beauty logo">
+                <h1>Luxe Beauty</h1>
+            </a>
         </div>
-        <!-- Navigation links to all five pages with target="_blank" -->
         <nav>
-            <a href="index.html" target="_blank">Home</a> &nbsp;|&nbsp;
-            <a href="about.html" target="_blank">About</a> &nbsp;|&nbsp;
-            <a href="products.html" target="_blank">Products</a> &nbsp;|&nbsp;
-            <a href="enquiry.html" target="_blank">Enquiry</a> &nbsp;|&nbsp;
-            <a href="contact.html" target="_blank">Contact</a>
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html" class="active">About</a> &nbsp;|&nbsp;
+            <a href="products.html">Products</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
 
-        <!-- Our Story section with founder image -->
-        <section class="our-story">
+        <h1>About Luxe Beauty</h1>
+
+        <!-- our story + founder pic -->
+        <section class="welcome">
             <h2>Our Story</h2>
             <p>Luxe Beauty was founded in 2024 by Malesa Walmena, a passionate entrepreneur in her early twenties. Inspired by her love for cosmetics and skincare, she wanted to create a beauty brand that helps people express themselves with confidence while offering affordable luxury.</p>
             <p>Starting as a small online beauty store, Luxe Beauty has grown into a trusted destination for makeup, skincare, and beauty essentials.</p>
-            <img src="images/founder.jpeg" alt="Malesa Walmena, Founder of Luxe Beauty" >
+            <img src="images/founder.jpeg" alt="Malesa Walmena, founder of Luxe Beauty" style="max-width: 250px; margin-top: 15px; border-radius: 8px;">
         </section>
 
-        <!-- Mission statement -->
-        <section class="mission-vision">
+        <!-- mission + vision -->
+        <section class="welcome">
             <h2>Mission</h2>
             <p>To provide high quality beauty products that inspire confidence, celebrate diversity, and promote healthy skincare for everyone.</p>
 
-            <!-- Vision statement -->
-            <h2>Vision</h2>
+            <h2 style="margin-top: 20px;">Vision</h2>
             <p>To become South Africa's most trusted beauty and cosmetics store by delivering quality products and exceptional customer experiences.</p>
         </section>
 
-        <!-- Company objectives listed as bullet points -->
-        <section class="objectives">
+        <!-- goals -->
+        <section class="why-choose">
             <h2>Objectives</h2>
             <ul>
                 <li>Expand across South Africa.</li>
@@ -57,37 +64,82 @@
             </ul>
         </section>
 
-        <!-- Core values that spell out MOST -->
-        <section class="core-values">
+        <!-- values spell MOST -->
+        <section class="why-choose">
             <h2>Core Values</h2>
             <ul>
-                <li><strong>M</strong> – Quality</li>
-                <li><strong>O</strong> – Integrity</li>
-                <li><strong>S</strong> – Innovation</li>
-                <li><strong>T</strong> – Inclusivity</li>
-                <li><strong>+</strong> – Customer Satisfaction</li>
-                <li><strong>+</strong> – Excellence</li>
+                <li><strong>M</strong> - Quality</li>
+                <li><strong>O</strong> - Integrity</li>
+                <li><strong>S</strong> - Innovation</li>
+                <li><strong>T</strong> - Inclusivity</li>
+                <li><strong>+</strong> - Customer Satisfaction</li>
+                <li><strong>+</strong> - Excellence</li>
             </ul>
         </section>
 
-        <!-- Founder profile section -->
-        <section class="founder">
+        <!-- FAQ accordion - part 3 interactive element -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+                    Are your products cruelty-free?
+                </div>
+                <div class="accordion-content">
+                    <p>Yes. All Luxe Beauty products are cruelty-free. We never test on animals and we only partner with brands that share this commitment.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+                    Do you have products for sensitive skin?
+                </div>
+                <div class="accordion-content">
+                    <p>Yes. Our Radiance Glow Serum is formulated for dry and normal skin, but we also stock gentle cleansers and fragrance-free moisturisers. Ask our consultants for a personalised recommendation.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+                    Can I return a product if I don't like it?
+                </div>
+                <div class="accordion-content">
+                    <p>Yes. You can return unopened products within 14 days for a full refund. Opened products can be exchanged within 7 days if there is a quality issue.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+                    Do you deliver outside Johannesburg and Pretoria?
+                </div>
+                <div class="accordion-content">
+                    <p>Yes. We courier nationwide across South Africa. Delivery takes 2 to 5 working days depending on your area. Free shipping on orders over R500.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- meet founder -->
+        <section class="welcome">
             <h2>Meet the Founder</h2>
-            <p><strong>Malesa Walmena</strong> – Founder &amp; Managing Director</p>
+            <p><strong>Malesa Walmena</strong> - Founder &amp; Managing Director</p>
             <p>Malesa believes beauty is about confidence, self expression, and self care. Her goal is to make every customer feel valued while providing products that meet different beauty needs.</p>
         </section>
 
     </main>
 
-    <!-- Footer with social media links and copyright -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
     <footer>
         <div class="footer-social">
             <h3>Follow Us</h3>
             <ul>
-                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank">TikTok</a></li>
-                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank">YouTube</a></li>
+                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank" rel="noopener">TikTok</a></li>
+                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank" rel="noopener">YouTube</a></li>
             </ul>
         </div>
         <div class="footer-copy">
@@ -95,5 +147,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,72 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Beauty - Products</title>
+    <title>Shop Cosmetics & Skincare | Luxe Beauty Products</title>
+
+    <meta name="description" content="Browse Luxe Beauty products: Velvet Matte Foundation, Radiance Glow Serum, Luxury Lipstick Collection, and Waterproof Mascara. Prices from R169. Cruelty-free.">
+    <meta name="keywords" content="buy foundation, buy lipstick, buy mascara, buy serum, cosmetics online South Africa, Luxe Beauty products, cruelty-free makeup">
+    <meta name="author" content="Luxe Beauty">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header section with logo and navigation menu -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <div class="logo">
             <a href="index.html">
-            <img src="images/logo.jpeg" alt="Luxe Beauty Logo" width="60">
-            <h1>Luxe Beauty</h1></a>
+                <img src="images/logo.jpeg" alt="Luxe Beauty logo">
+                <h1>Luxe Beauty</h1>
+            </a>
         </div>
         <nav>
-            <a href="index.html" target="_blank">Home</a> &nbsp;|&nbsp;
-            <a href="about.html" target="_blank">About</a> &nbsp;|&nbsp;
-            <a href="products.html" target="_blank">Products</a> &nbsp;|&nbsp;
-            <a href="enquiry.html" target="_blank">Enquiry</a> &nbsp;|&nbsp;
-            <a href="contact.html" target="_blank">Contact</a>
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About</a> &nbsp;|&nbsp;
+            <a href="products.html" class="active">Products</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+
         <h1>Our Products</h1>
 
-        <!-- Product grid wrapper -->
+        <!-- search - part 3 dynamic content -->
+        <div class="search-box">
+            <label for="product-search">Search products</label>
+            <input type="text" id="product-search" placeholder="Type to filter, e.g. 'lipstick' or 'serum'">
+        </div>
+
+        <!-- product grid -->
         <div class="products-grid">
 
-            <!-- Product 1: Velvet Matte Foundation -->
             <article class="product">
-                <img src="images/foundation.png" alt="Velvet Matte Foundation bottle">
+                <img src="images/foundation.png" alt="Velvet Matte Foundation bottle with black cap">
                 <h3>Velvet Matte Foundation</h3>
                 <p><strong>Price:</strong> R249</p>
                 <p>Long lasting foundation suitable for all skin types.</p>
             </article>
 
-            <!-- Product 2: Radiance Glow Serum -->
             <article class="product">
-                <img src="images/glow-serum.png" alt="Radiance Glow Serum dropper bottle">
+                <img src="images/glow-serum.png" alt="Radiance Glow Serum in glass dropper bottle">
                 <h3>Radiance Glow Serum</h3>
                 <p><strong>Price:</strong> R299</p>
                 <p>Hydrates and brightens the skin.</p>
             </article>
 
-            <!-- Product 3: Luxury Lipstick Collection -->
             <article class="product">
-                <img src="images/lipstick.png" alt="Luxury Lipstick Collection">
+                <img src="images/lipstick.png" alt="Luxury Lipstick Collection in berry red shade">
                 <h3>Luxury Lipstick Collection</h3>
                 <p><strong>Price:</strong> R169</p>
                 <p>Rich colours with long lasting wear.</p>
             </article>
 
-            <!-- Product 4: Waterproof Mascara -->
             <article class="product">
-                <img src="images/mascara.png" alt="Waterproof Mascara tube">
+                <img src="images/mascara.png" alt="Waterproof Mascara tube with silver cap">
                 <h3>Waterproof Mascara</h3>
                 <p><strong>Price:</strong> R189</p>
                 <p>Creates fuller, longer lashes.</p>
             </article>
 
         </div>
-        <!-- End of products-grid -->
 
-        <!-- Product comparison table -->
+        <!-- shows when no search matches -->
+        <p class="no-results" id="no-results">No products match your search. Try a different word.</p>
+
+        <!-- comparison table -->
         <section class="comparison">
             <h2>Product Comparison</h2>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>Product</th>
@@ -103,15 +115,19 @@
 
     </main>
 
-    <!-- Footer -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
     <footer>
         <div class="footer-social">
             <h3>Follow Us</h3>
             <ul>
-                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank">TikTok</a></li>
-                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank">YouTube</a></li>
+                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank" rel="noopener">TikTok</a></li>
+                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank" rel="noopener">YouTube</a></li>
             </ul>
         </div>
         <div class="footer-copy">
@@ -119,5 +135,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

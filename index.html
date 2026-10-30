@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Beauty - Home</title>
+    <title>Luxe Beauty | Premium Cosmetics & Skincare South Africa</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Shop premium cosmetics, skincare, and beauty essentials at Luxe Beauty. Cruelty-free products for every skin tone. Johannesburg and Pretoria stores.">
+    <meta name="keywords" content="luxe beauty, cosmetics, skincare, makeup, foundation, serum, lipstick, mascara, South African beauty, cruelty-free">
+    <meta name="author" content="Luxe Beauty">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header section with logo and navigation menu -->
+    <!-- skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header - same on every page -->
     <header>
-       <div class="logo">
+        <div class="logo">
             <a href="index.html">
-            <img src="images/logo.jpeg" alt="Luxe Beauty Logo" width="60">
-            <h1>Luxe Beauty</h1></a>
+                <img src="images/logo.jpeg" alt="Luxe Beauty logo">
+                <h1>Luxe Beauty</h1>
+            </a>
         </div>
         <nav>
-            <a href="index.html" target="_blank">Home</a> &nbsp;|&nbsp;
-            <a href="about.html" target="_blank">About</a> &nbsp;|&nbsp;
-            <a href="products.html" target="_blank">Products</a> &nbsp;|&nbsp;
-            <a href="enquiry.html" target="_blank">Enquiry</a> &nbsp;|&nbsp;
-            <a href="contact.html" target="_blank">Contact</a>
+            <a href="index.html" class="active">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About</a> &nbsp;|&nbsp;
+            <a href="products.html">Products</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero section -->
+    <main id="main-content">
+
+        <!-- hero - big banner + 2 buttons -->
         <section class="hero">
-            <img src="images/hero-banner.png" alt="Luxe Beauty cosmetics and skincare collection" width="100%">
+            <img src="images/hero-banner.png" alt="Luxe Beauty cosmetics and skincare collection on marble surface">
             <h1>Enhance Your Natural Beauty with Confidence</h1>
             <p>Premium skincare, makeup, fragrances, and beauty essentials designed to help you look and feel your best.</p>
             <a href="products.html"><button>Shop Now</button></a>
             <a href="products.html"><button>Explore Products</button></a>
         </section>
 
-        <!-- Welcome message -->
+        <!-- welcome text -->
         <section class="welcome">
             <h2>Welcome to Luxe Beauty</h2>
             <p>Where beauty meets quality. We offer carefully selected cosmetics and skincare products that suit every skin tone and beauty style. Our goal is to make luxury beauty products accessible and affordable for everyone.</p>
         </section>
 
-        <!-- Why choose Luxe Beauty -->
+        <!-- why choose us -->
         <section class="why-choose">
             <h2>Why Choose Luxe Beauty</h2>
             <ul>
@@ -53,7 +64,7 @@
             </ul>
         </section>
 
-        <!-- How to order -->
+        <!-- steps to order -->
         <section class="how-to-order">
             <h2>How to Order</h2>
             <ol>
@@ -64,7 +75,7 @@
             </ol>
         </section>
 
-        <!-- Customer testimonial -->
+        <!-- customer review -->
         <section class="testimonial">
             <h2>What Our Customers Say</h2>
             <blockquote>
@@ -72,17 +83,24 @@
                 <footer><cite>Naledi M.</cite></footer>
             </blockquote>
         </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- lightbox overlay -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- footer -->
     <footer>
         <div class="footer-social">
             <h3>Follow Us</h3>
             <ul>
-                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank">TikTok</a></li>
-                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank">YouTube</a></li>
+                <li><a href="https://www.facebook.com/skinrepublicsa" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://www.instagram.com/skinrepublicsa" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@skinrepublicsa" target="_blank" rel="noopener">TikTok</a></li>
+                <li><a href="https://www.youtube.com/@SkinRepublicSA" target="_blank" rel="noopener">YouTube</a></li>
             </ul>
         </div>
         <div class="footer-copy">
@@ -90,5 +108,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
